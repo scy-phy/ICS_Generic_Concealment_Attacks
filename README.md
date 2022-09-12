@@ -65,4 +65,13 @@ execute it in Matlab
 
 #### PASAD Folder:
 
+##### pasad_BATADAL.m
+
+Test the generic concealment attacks against the PASAD detector (as in section 6.2.2).
+
+The output of the script produces Table 5
+
+Usage:
+
+execute it in Matlab
 
