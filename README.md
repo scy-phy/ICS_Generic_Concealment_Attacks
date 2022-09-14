@@ -1,7 +1,7 @@
 Assessing Model-free Anomaly Detection in Industrial Control Systems Against Generic Concealment Attacks
 =======
 
-## In proceedings of the the Annual Computer Security Applications Conference (ACSAC)
+## In proceedings of the the Annual Computer Security Applications Conference 2022 (ACSAC'2022)
 
 When using this code from this repository please cite our work as follows:
 ```
