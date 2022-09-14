@@ -18,7 +18,8 @@ BIBTEX entry to be added
   * `AR` contains our re implementation of AR+CUSUM detection presented in section 5.
   * `PASAD` contains our adaptation of the PASAD detector to work with BATADAL dataset as presented in section 5. Our adaptation is based on the official code by the authors of the PASAD paper [Github](https://github.com/mikeliturbe/pasad) 
   * `SFIG` folder contains our re-implementation of the SFIG detector presented in section 5 . For the CFP-Growth++  our script relies on v2.40 spmf library available at [http://www.philippe-fournier-viger.com/spmf/](http://www.philippe-fournier-viger.com/spmf/)
-  * `Autoencoders` folders relies on anomaly detection [https://github.com/scy-phy/ICS-Evasion-Attacks](https://github.com/scy-phy/ICS-Evasion-Attacks) as described in section 5.
+  * `Autoencoders` folder relies on anomaly detection [https://github.com/scy-phy/ICS-Evasion-Attacks](https://github.com/scy-phy/ICS-Evasion-Attacks) as described in section 5.
+  * `Countermeasure` this contains the anomaly detection system presented in the appedix C
 
 ### Requirements
 
@@ -110,7 +111,7 @@ execute the python notebook to reproduce results showed in Figure 5 and Table 7
 
 ### Countermeasure Folder:
 
-this contains the countermeasure presented in the appedix
+this folder contains the countermeasure presented in the appedix
 
 #### ensemble_BATADAL.m
 
