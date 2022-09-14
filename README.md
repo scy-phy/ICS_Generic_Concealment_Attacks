@@ -44,7 +44,7 @@ Usage:
 #### AR_detection.m
 
 MATLAB function that provides AR detection with CUSUM (as described in section 5)
-This function is used by the next two scripts
+This function is used by following two scripts
 
 #### find_cusum_params.m
 
