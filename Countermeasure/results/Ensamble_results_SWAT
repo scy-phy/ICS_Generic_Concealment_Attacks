@@ -1,0 +1,54 @@
+Original Attacks
+Overall Accuracy: 0.874235 F1-score: 0.236507 Precision: 0.432811 Recall: 0.162709 FPR: 0.028998
+Overall Accuracy: 0.965176 F1-score: 0.833404 Precision: 0.975240 Recall: 0.727587 FPR: 0.002512
+Test Accuracy: 0.948849 F1-score: 0.789780 Precision: 0.777354 Recall: 0.802610 FPR: 0.031263
+________________________________
+Unconstrained STALE
+Overall Accuracy: 0.855927 F1-score: 0.271076 Precision: 0.343743 Recall: 0.223771 FPR: 0.058100
+Overall Accuracy: 0.993037 F1-score: 0.970888 Precision: 0.971854 Recall: 0.969924 FPR: 0.003820
+Evasion Attack Accuracy: 0.944277 F1-score: 0.809037 Precision: 0.685937 Recall: 0.985983 FPR: 0.061395
+
+Unconstrained GAUSSIAN
+Overall Accuracy: 0.934159 F1-score: 0.784323 Precision: 0.645174 Recall: 1.000000 FPR: 0.074795
+Overall Accuracy: 0.878351 F1-score: NaN Precision: 0.000000 Recall: 0.000000 FPR: 0.002194
+Evasion Attack Accuracy: 0.932366 F1-score: 0.779742 Precision: 0.638997 Recall: 1.000000 FPR: 0.076833
+
+Unconstrained GAUSSIAN 2
+Overall Accuracy: 0.935011 F1-score: 0.786516 Precision: 0.648147 Recall: 1.000000 FPR: 0.073828
+Overall Accuracy: 0.878351 F1-score: NaN Precision: 0.000000 Recall: 0.000000 FPR: 0.002194
+Evasion Attack Accuracy: 0.933210 F1-score: 0.781892 Precision: 0.641891 Recall: 1.000000 FPR: 0.075873
+
+Unconstrained CONSTANT
+Overall Accuracy: 0.864389 F1-score: 0.271892 Precision: 0.380558 Recall: 0.211500 FPR: 0.046819
+Overall Accuracy: 0.993612 F1-score: 0.973165 Precision: 0.978887 Recall: 0.967510 FPR: 0.002838
+Evasion Attack Accuracy: 0.954296 F1-score: 0.837165 Precision: 0.729915 Recall: 0.981360 FPR: 0.049384
+
+Unconstrained REPLAY
+Overall Accuracy: 0.866889 F1-score: 0.306608 Precision: 0.407315 Recall: 0.245827 FPR: 0.048647
+Overall Accuracy: 0.878589 F1-score: 0.003902 Precision: 0.109631 Recall: 0.001987 FPR: 0.002194
+Evasion Attack Accuracy: 0.865120 F1-score: 0.304318 Precision: 0.397776 Recall: 0.246421 FPR: 0.050738
+________________________________
+Constrained STALE
+Overall Accuracy: 0.848955 F1-score: 0.569445 Precision: 0.432219 Recall: 0.834339 FPR: 0.149057
+Overall Accuracy: 0.993052 F1-score: 0.970803 Precision: 0.976843 Recall: 0.964837 FPR: 0.003111
+Evasion Attack Accuracy: 0.864856 F1-score: 0.635978 Precision: 0.469334 Recall: 0.986113 FPR: 0.151635
+
+Constrained GAUSSIAN
+Overall Accuracy: 0.891123 F1-score: 0.680619 Precision: 0.524504 Recall: 0.969051 FPR: 0.119476
+Overall Accuracy: 0.949275 F1-score: 0.736594 Precision: 0.973489 Recall: 0.592429 FPR: 0.002194
+Evasion Attack Accuracy: 0.889433 F1-score: 0.677276 Precision: 0.520527 Recall: 0.969107 FPR: 0.121402
+
+Constrained GAUSSIAN 2
+Overall Accuracy: 0.891436 F1-score: 0.681370 Precision: 0.525233 Recall: 0.969608 FPR: 0.119195
+Overall Accuracy: 0.949275 F1-score: 0.736594 Precision: 0.973489 Recall: 0.592429 FPR: 0.002194
+Evasion Attack Accuracy: 0.889753 F1-score: 0.678047 Precision: 0.521262 Recall: 0.969719 FPR: 0.121122
+
+Constrained CONSTANT
+Overall Accuracy: 0.876464 F1-score: 0.606670 Precision: 0.490177 Recall: 0.795797 FPR: 0.112565
+Overall Accuracy: 0.993774 F1-score: 0.973766 Precision: 0.982573 Recall: 0.965115 FPR: 0.002328
+Evasion Attack Accuracy: 0.896744 F1-score: 0.694521 Precision: 0.537703 Recall: 0.980469 FPR: 0.114643
+
+Constrained REPLAY
+Overall Accuracy: 0.875915 F1-score: 0.619353 Precision: 0.489413 Recall: 0.843232 FPR: 0.119640
+Overall Accuracy: 0.949411 F1-score: 0.737483 Precision: 0.973538 Recall: 0.593561 FPR: 0.002194
+Evasion Attack Accuracy: 0.874208 F1-score: 0.616142 Precision: 0.485397 Recall: 0.843288 FPR: 0.121586

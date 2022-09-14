@@ -1,0 +1,103 @@
+Model: 
+order 10
+CUSUM params:
+LIT101 10.0000    2.0000    
+LIT301  5.0000    2.0000    
+LIT401  5.0000    6.0000
+
+
+TEST
+Accuracy: 0.939565 F1-score: 0.196076 Precision: 0.365213 Recall: 0.134012 FPR: 0.013555
+Accuracy: 0.939940 F1-score: 0.146511 Precision: 0.335285 Recall: 0.093736 FPR: 0.010815
+Accuracy: 0.952610 F1-score: 0.318228 Precision: 0.761970 Recall: 0.201109 FPR: 0.003656
+Overall Accuracy: 0.943375 F1-score: 0.451707 Precision: 0.483119 Recall: 0.424129 FPR: 0.026407
+
+CONSTRAINED CONSTANT
+Accuracy: 0.943420 F1-score: 0.353667 Precision: 0.475649 Recall: 0.281480 FPR: 0.018058
+Accuracy: 0.935635 F1-score: 0.353408 Precision: 0.394837 Recall: 0.319847 FPR: 0.028529
+Accuracy: 0.947890 F1-score: 0.154882 Precision: 0.716429 Recall: 0.086826 FPR: 0.002000
+Overall Accuracy: 0.936485 F1-score: 0.521742 Precision: 0.445251 Recall: 0.629966 FPR: 0.045677
+CONSTRAINED STALE
+Accuracy: 0.939630 F1-score: 0.382657 Precision: 0.437201 Recall: 0.340213 FPR: 0.025487
+Accuracy: 0.933135 F1-score: 0.260220 Precision: 0.332297 Recall: 0.213838 FPR: 0.025005
+Accuracy: 0.953205 F1-score: 0.385045 Precision: 0.694313 Recall: 0.266388 FPR: 0.006825
+Overall Accuracy: 0.931660 F1-score: 0.505034 Precision: 0.419681 Recall: 0.633967 FPR: 0.051016
+CONSTRAINED GAUSSIAN
+Accuracy: 0.942900 F1-score: 0.447295 Precision: 0.478216 Recall: 0.420129 FPR: 0.026677
+Accuracy: 0.936430 F1-score: 0.523356 Precision: 0.445295 Recall: 0.634603 FPR: 0.046005
+Accuracy: 0.951045 F1-score: 0.320117 Precision: 0.677543 Recall: 0.209565 FPR: 0.005804
+Overall Accuracy: 0.925350 F1-score: 0.579484 Precision: 0.419792 Recall: 0.935267 FPR: 0.075227
+CONSTRAINED REPLAY
+Accuracy: 0.949790 F1-score: 0.481302 Precision: 0.557230 Recall: 0.423584 FPR: 0.019587
+Accuracy: 0.930205 F1-score: 0.327310 Precision: 0.348236 Recall: 0.308755 FPR: 0.033629
+Accuracy: 0.950500 F1-score: 0.269912 Precision: 0.714565 Recall: 0.166379 FPR: 0.003868
+Overall Accuracy: 0.938185 F1-score: 0.587364 Precision: 0.464033 Recall: 0.799982 FPR: 0.053772
+
+UNCONSTRAINED CONSTANT
+Accuracy: 0.914705 F1-score: 0.516043 Precision: 0.375052 Recall: 0.826893 FPR: 0.080185
+Accuracy: 0.935105 F1-score: 0.491359 Precision: 0.431809 Recall: 0.569961 FPR: 0.043645
+Accuracy: 0.946785 F1-score: 0.328560 Precision: 0.536686 Recall: 0.236749 FPR: 0.011894
+Overall Accuracy: 0.907615 F1-score: 0.497676 Precision: 0.354988 Recall: 0.832167 FPR: 0.087994
+UNCONSTRAINED STALE
+Accuracy: 0.889580 F1-score: 0.327159 Precision: 0.246025 Recall: 0.488135 FPR: 0.087058
+Accuracy: 0.925750 F1-score: 0.369266 Precision: 0.346513 Recall: 0.395218 FPR: 0.043375
+Accuracy: 0.936525 F1-score: 0.217758 Precision: 0.337859 Recall: 0.160651 FPR: 0.018323
+Overall Accuracy: 0.896410 F1-score: 0.420864 Precision: 0.303855 Recall: 0.684426 FPR: 0.091253
+UNCONSTRAINED GAUSSIAN
+Accuracy: 0.886995 F1-score: 0.493240 Precision: 0.327351 Recall: 1.000000 FPR: 0.119581
+Accuracy: 0.916820 F1-score: 0.569395 Precision: 0.398010 Recall: 1.000000 FPR: 0.088021
+Accuracy: 0.965225 F1-score: 0.759783 Precision: 0.612621 Recall: 1.000000 FPR: 0.036799
+Overall Accuracy: 0.884615 F1-score: 0.488031 Precision: 0.322778 Recall: 1.000000 FPR: 0.122100
+UNCONSTRAINED REPLAY
+Accuracy: 0.907885 F1-score: 0.470253 Precision: 0.343889 Recall: 0.743431 FPR: 0.082545
+Accuracy: 0.928470 F1-score: 0.479138 Precision: 0.399587 Recall: 0.598236 FPR: 0.052312
+Accuracy: 0.946670 F1-score: 0.388908 Precision: 0.525794 Recall: 0.308574 FPR: 0.016196
+Overall Accuracy: 0.904760 F1-score: 0.497812 Precision: 0.350563 Recall: 0.858351 FPR: 0.092539
+___________________________________________________________________________________________________
+VALIDATION
+Accuracy: 0.790852 F1-score: 0.072306 Precision: 0.151113 Recall: 0.047522 FPR: 0.055266
+Accuracy: 0.821162 F1-score: 0.084700 Precision: 0.346573 Recall: 0.048246 FPR: 0.018831
+Accuracy: 0.830337 F1-score: 0.040462 Precision: 0.674208 Recall: 0.020857 FPR: 0.002086
+Overall Accuracy: 0.786831 F1-score: 0.155076 Precision: 0.242162 Recall: 0.114058 FPR: 0.073893
+
+UNCONSTRAINED CONSTANT
+Accuracy: 0.772330 F1-score: 0.175986 Precision: 0.232024 Recall: 0.141751 FPR: 0.097129
+Accuracy: 0.812667 F1-score: 0.145875 Precision: 0.334561 Recall: 0.093272 FPR: 0.038405
+Accuracy: 0.826272 F1-score: 0.051802 Precision: 0.405332 Recall: 0.027669 FPR: 0.008404
+Overall Accuracy: 0.771518 F1-score: 0.182973 Precision: 0.236587 Recall: 0.149169 FPR: 0.099645
+UNCONSTRAINED STALE
+Accuracy: 0.762055 F1-score: 0.107651 Precision: 0.150860 Recall: 0.083683 FPR: 0.097510
+Accuracy: 0.791484 F1-score: 0.077500 Precision: 0.160649 Recall: 0.051068 FPR: 0.055237
+Accuracy: 0.830097 F1-score: 0.109326 Precision: 0.541788 Recall: 0.060797 FPR: 0.010645
+Overall Accuracy: 0.761595 F1-score: 0.161714 Precision: 0.203708 Recall: 0.134075 FPR: 0.108498
+UNCONSTRAINED GAUSSIAN
+Accuracy: 0.902536 F1-score: 0.778737 Precision: 0.637648 Recall: 1.000000 FPR: 0.117640
+Accuracy: 0.949160 F1-score: 0.870919 Precision: 0.771351 Recall: 1.000000 FPR: 0.061365
+Accuracy: 0.982802 F1-score: 0.952258 Precision: 0.908867 Recall: 1.000000 FPR: 0.020758
+Overall Accuracy: 0.901916 F1-score: 0.777642 Precision: 0.636181 Recall: 1.000000 FPR: 0.118389
+UNCONSTRAINED REPLAY
+Accuracy: 0.744737 F1-score: 0.120906 Precision: 0.147686 Recall: 0.102347 FPR: 0.122277
+Accuracy: 0.822671 F1-score: 0.183199 Precision: 0.436194 Recall: 0.115948 FPR: 0.031026
+Accuracy: 0.826524 F1-score: 0.061519 Precision: 0.426343 Recall: 0.033151 FPR: 0.009234
+Overall Accuracy: 0.749167 F1-score: 0.157691 Precision: 0.185932 Recall: 0.136898 FPR: 0.124083
+
+CONSTRAINED CONSTANT
+Accuracy: 0.791060 F1-score: 0.097636 Precision: 0.188283 Recall: 0.065906 FPR: 0.058820
+Accuracy: 0.833794 F1-score: 0.637286 Precision: 0.509253 Recall: 0.851320 FPR: 0.169834
+Accuracy: 0.827360 F1-score: 0.021366 Precision: 0.384804 Recall: 0.010988 FPR: 0.003637
+Overall Accuracy: 0.810223 F1-score: 0.617622 Precision: 0.471881 Recall: 0.893617 FPR: 0.207042
+CONSTRAINED STALE
+Accuracy: 0.787551 F1-score: 0.073661 Precision: 0.146060 Recall: 0.049249 FPR: 0.059607
+Accuracy: 0.783670 F1-score: 0.584757 Precision: 0.435875 Recall: 0.888111 FPR: 0.237951
+Accuracy: 0.830021 F1-score: 0.068379 Precision: 0.570018 Recall: 0.036371 FPR: 0.005680
+Overall Accuracy: 0.755601 F1-score: 0.559631 Precision: 0.404965 Recall: 0.905445 FPR: 0.275420
+CONSTRAINED GAUSSIAN
+Accuracy: 0.787155 F1-score: 0.096385 Precision: 0.177268 Recall: 0.066186 FPR: 0.063592
+Accuracy: 0.863804 F1-score: 0.704936 Precision: 0.560874 Recall: 0.948582 FPR: 0.153747
+Accuracy: 0.971527 F1-score: 0.912997 Precision: 0.959179 Recall: 0.871057 FPR: 0.007674
+Overall Accuracy: 0.836031 F1-score: 0.674172 Precision: 0.511368 Recall: 0.989058 FPR: 0.195648
+CONSTRAINED REPLAY
+Accuracy: 0.776940 F1-score: 0.084178 Precision: 0.142278 Recall: 0.059770 FPR: 0.074594
+Accuracy: 0.830577 F1-score: 0.638893 Precision: 0.503508 Recall: 0.873857 FPR: 0.178383
+Accuracy: 0.827008 F1-score: 0.011568 Precision: 0.288813 Recall: 0.005902 FPR: 0.003009
+Overall Accuracy: 0.802384 F1-score: 0.610314 Precision: 0.461108 Recall: 0.902272 FPR: 0.218295
