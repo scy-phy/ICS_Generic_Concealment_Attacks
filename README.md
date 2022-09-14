@@ -22,7 +22,7 @@ BIBTEX entry to be added
 
 ### Requirements
 
-To execute and evaluate the framework `Python 3`, `Keras`, `Pandas`, `Numpy`, `Jupyter`, `Java JDK`, and `Matlab` (with System Identification Toolbox) are required. Installation through `conda` is suggested.
+To execute and evaluate the framework `Python 3`, `Keras` (with tensorflow backend), `Pandas`, `Numpy`, `Jupyter`, `Java JDK`, and `Matlab` (with System Identification Toolbox) are required. Installation through `conda` is suggested.
 
 
 ### Spoofing Framework folder:
