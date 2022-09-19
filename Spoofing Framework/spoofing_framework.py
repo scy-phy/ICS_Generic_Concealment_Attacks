@@ -214,7 +214,7 @@ if __name__ == "__main__":
     data_folder_name = "BATADAL"
     test_data_name = "test_dataset_1"
     eavesdropped_data_name ="train_dataset_datetime"
-    storing_folder = "Test"
+    storing_folder = "BATADAL"
     days_back = 350
     unconstrained_spoofing_techniques = [random_replay, replay, stale]
     constrained_spoofing_techniques = [constrained_random_replay, constrained_replay, constrained_stale]
