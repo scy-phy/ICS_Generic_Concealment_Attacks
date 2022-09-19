@@ -25,7 +25,7 @@ rules = None
 
 
 def parallelize_dataframe(df, func):
-    num_cores = multiprocessing.cpu_count()-1
+    num_cores = multiprocessing.cpu_count()
     num_partitions = num_cores  # number of partitions to split dataframe
     df_split = np.array_split(df, num_partitions)
     pool = multiprocessing.Pool(num_cores)

@@ -25,6 +25,8 @@ BIBTEX entry to be added
 
 To execute and evaluate the framework `Python 3`, `Keras` (with tensorflow backend), `Pandas`, `Numpy`, `Jupyter`, `Java JDK`, and `Matlab` (with System Identification Toolbox) are required. Installation through `conda` is suggested.
 
+`pip install -r requirements.txt`
+
 
 ### Spoofing Framework folder:
 
