@@ -9,6 +9,7 @@
 %compute scores
 %%
 clear all;
+close all;
 
 %%Load Train Data
 train = readtable('../Spoofing Framework/BATADAL/train_dataset_datetime.csv');
@@ -18,14 +19,12 @@ train(:,44) = [];
 
 train_rolling = train(:,(1:31));
 Train_rolling = table2array(train_rolling);
-%Train_rolling = Train_rolling(20000:end,:);
+
 
 output = train(:,(1:7));
 train_lti = train(:,(8:31));
 Train = table2array(train_lti);
 Output = table2array(output);
-%Output = Output(20000:end,:);
-%Train = Train(20000:end,:);
 Min_Train=min(Train);
 Max_Train=max(Train);
 Min_Output=min(Output);
@@ -33,13 +32,7 @@ Max_Output=max(Output);
 
 Norm_train=rescale(Train, 'InputMin',Min_Train,'InputMax',Max_Train);
 Norm_output=rescale(Output, 'InputMin',Min_Output,'InputMax',Max_Output);
-%scaler = MinMaxScaler();
-%scaler.fit(Train);
-%Norm_train = scaler.transform(Train);
-%Norm_test=rescale(Test, 'InputMin', Min_Train, 'InputMax', Max_Train);
-%scaler2 = MinMaxScaler();
-%scaler2.fit(Output);
-%Norm_output = scaler2.transform(Output);
+
 train_data = iddata(Norm_output,Norm_train,1);
 %% Load Test Data
 
@@ -57,9 +50,8 @@ input_test = test(:,(8:31));
 Test = table2array(input_test);
 Output_test = table2array(output_test);
 
-%Norm_test = scaler.transform(Test);
+
 Norm_test=rescale(Test, 'InputMin', Min_Train, 'InputMax', Max_Train);
-%Norm_output_test = scaler2.transform(Output_test);
 Norm_output_test=rescale(Output_test, 'InputMin', Min_Output, 'InputMax', Max_Output);
 test_data = iddata(Norm_output_test,Norm_test,1);
 

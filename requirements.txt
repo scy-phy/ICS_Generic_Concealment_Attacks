@@ -5,3 +5,5 @@ numpy==1.22
 anytree==2.8.0
 notebook
 matplotlib
+seaborn
+

@@ -242,5 +242,5 @@ function plot_results(plot_name, d_original, d, threshold, atck_rg, testing, Tes
     recall = tp/(tp+fn);
     f1score = 2*((precision*recall)/(precision+recall));
     fpr = fp/(fp+tn);
-    fprintf('Recall: %.3f Precision: %.3f F1-score: %.3f Acuracy: %.3f FPR: %.3f\n', recall, precision, f1score, accuracy, fpr);
+    fprintf('Recall: %.3f Precision: %.3f F1-score: %.3f Accuracy: %.3f FPR: %.3f\n', recall, precision, f1score, accuracy, fpr);
 end
