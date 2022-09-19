@@ -1,6 +1,8 @@
 import pandas as pd
 import os
 import datetime
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 pd.set_option('display.max_columns', 500)
 
 def identify_attacks(test_data, days):
@@ -212,7 +214,7 @@ if __name__ == "__main__":
     data_folder_name = "BATADAL"
     test_data_name = "test_dataset_1"
     eavesdropped_data_name ="train_dataset_datetime"
-    storing_folder = "BATADAL"
+    storing_folder = "Test"
     days_back = 350
     unconstrained_spoofing_techniques = [random_replay, replay, stale]
     constrained_spoofing_techniques = [constrained_random_replay, constrained_replay, constrained_stale]
@@ -237,7 +239,7 @@ if __name__ == "__main__":
             assert len(spoofed_data) == len(test_data)
             try: 
                 spoofed_data.to_csv('./{}/unconstrained_spoofing/{}_{}.csv'.format(storing_folder, test_data_name, spoofing_technique.__name__))
-            except FileNotFoundError:
+            except (FileNotFoundError, OSError):
                 if not(os.path.isdir(storing_folder)):
                     os.mkdir(storing_folder)
                 if not(os.path.isdir('./{}/unconstrained_spoofing/'.format(storing_folder))):
@@ -269,7 +271,7 @@ if __name__ == "__main__":
                 assert len(spoofed_data) == len(test_data)
                 try:
                     spoofed_data.to_csv('./{}/constrained_spoofing/{}_{}_allowed_{}.csv'.format(storing_folder, test_data_name, spoofing_technique.__name__,i))
-                except FileNotFoundError:
+                except (FileNotFoundError, OSError):
                     if not(os.path.isdir(storing_folder)):
                         os.mkdir(storing_folder)
                     if not(os.path.isdir('./{}/constrained_spoofing/'.format(storing_folder))):
