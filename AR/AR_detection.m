@@ -24,7 +24,11 @@ function [accuracy, precision, recall, f1, fpr] = AR_detection(column, climit, m
     resid(train,sys);
     figure;
     resid(test,sys);
-    [iupper_train, ilower_train] = cusum(e_train,climit,mshift,mfnc,sfnc, 'all');
+    try 
+        [iupper_train, ilower_train] = cusum(e_train.y,climit,mshift,mfnc,sfnc, 'all');
+    catch
+        [iupper_train, ilower_train] = cusum(e_train,climit,mshift,mfnc,sfnc, 'all');
+    end
     ground_truth_train = zeros([length(train) 1]);
     prediction_train = merge_cusum_results(ground_truth_train, iupper_train, ilower_train);
     [accuracy, precision, recall, f1, fpr] = compute_scores(ground_truth_train, prediction_train);
@@ -32,7 +36,11 @@ function [accuracy, precision, recall, f1, fpr] = AR_detection(column, climit, m
     fprintf('Accuracy Train: %f F1-score: %f Precision: %f Recall: %f FPR: %f\n', accuracy, f1, precision, recall, fpr);
     
     %% TEST
-    [iupper_test, ilower_test] = cusum(e_test,climit,mshift,mfnc,sfnc, 'all');
+    try
+        [iupper_test, ilower_test] = cusum(e_test.y,climit,mshift,mfnc,sfnc, 'all');
+    catch
+        [iupper_test, ilower_test] = cusum(e_test,climit,mshift,mfnc,sfnc, 'all');
+    end
     ground_truth_test = table2array(Test(:, 45));
     
     prediction_test = merge_cusum_results(ground_truth_test, iupper_test, ilower_test);
@@ -42,7 +50,11 @@ function [accuracy, precision, recall, f1, fpr] = AR_detection(column, climit, m
     fprintf('& %.2f & %.2f & %.2f & %.2f & %.2f \\\\ \n', recall, precision, f1, accuracy, fpr);
     
     figure; 
-    cusum(e_test,climit,mshift,mfnc,sfnc, 'all');
+    try
+        cusum(e_test.y,climit,mshift,mfnc,sfnc, 'all');
+    catch
+        cusum(e_test,climit,mshift,mfnc,sfnc, 'all');
+    end
     hold on;
     plot(ground_truth_test, 'g','LineWidth',5);
 
