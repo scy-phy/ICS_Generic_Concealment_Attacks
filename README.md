@@ -27,6 +27,9 @@ To execute and evaluate the framework `Python 3`, `Keras` (with tensorflow backe
 
 `pip install -r requirements.txt`
 
+### Virtual machine availability
+For the purposes of artifact evalaution a virtual machine is available for the reviewers. Please contact us via HotCRP comments to access the VM. 
+
 
 ### Spoofing Framework folder:
 
