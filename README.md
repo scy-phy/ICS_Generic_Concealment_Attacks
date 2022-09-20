@@ -23,10 +23,14 @@ BIBTEX entry to be added
 
 ### Requirements
 
-To execute and evaluate the framework `Python 3`, `Keras` (with tensorflow backend), `Pandas`, `Numpy`, `Jupyter`, `Java JDK`, and `Matlab` (with System Identification Toolbox) are required. Installation through `conda` is suggested.
+To execute and evaluate the framework `Python 3.8`, `Keras` (with tensorflow backend), `Pandas`, `Numpy`, `Jupyter`, `Java JDK`, and `Matlab` (with "System Identification", "Signal Processing" and "Statistics and Machine Learning" Toolboxes) are required. 
+For pyhton enviroment, installation through `conda` is suggested.
 
 ```
+conda create --name py38 python=3.8
+conda activate py38
 pip install -r requirements.txt
+sudo apt install default-jre
 ```
 
 ### Virtual machine availability
