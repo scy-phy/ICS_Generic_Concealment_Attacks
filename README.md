@@ -25,7 +25,9 @@ BIBTEX entry to be added
 
 To execute and evaluate the framework `Python 3`, `Keras` (with tensorflow backend), `Pandas`, `Numpy`, `Jupyter`, `Java JDK`, and `Matlab` (with System Identification Toolbox) are required. Installation through `conda` is suggested.
 
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
 ### Virtual machine availability
 For the purposes of artifact evalaution a virtual machine is available for the reviewers. Please contact us via HotCRP comments to access the VM. 
@@ -42,7 +44,9 @@ Parameters at the beginning of the main can be changed to adapt to other dataset
 
 Usage:
 
-`python spoofing_framework.py`
+```
+python spoofing_framework.py 
+```
 
 ### AR Folder:
 
@@ -56,8 +60,9 @@ This function is used by following two scripts
 CUSUM tuning script that performs grid search (as described in appendix A).
 
 Usage:
-
+```
 execute it in Matlab
+```
 
 #### test_detection.m
 
@@ -66,9 +71,9 @@ Test the generic concealment attacks against the AR detector (as in section 6.2.
 The output of the script produces Table 4
 
 Usage:
-
+```
 execute it in Matlab
-
+```
 ### PASAD Folder:
 
 #### pasad_BATADAL.m
@@ -78,9 +83,9 @@ Test the generic concealment attacks against the PASAD detector (as in section 6
 The output of the script produces Table 5
 
 Usage:
-
+```
 execute it in Matlab
-
+```
 ### SFIG Folder:
 
 #### invariant_mining.py
@@ -90,8 +95,9 @@ This script is used to mine the invariant rules for the anomaly detector.
 the model will be stred in the `model_folder` that is set in line 132 of the script
 Usage:
 
-`python invariant_mining.py`
-
+```
+python invariant_mining.py
+```
 
 #### anomaly_detection.py
 This script performs anomaly detection. It is configured to reprodice the results in Section 6.2.3 (Table 6 and Figure 4).
@@ -101,8 +107,9 @@ Results will be stored in the `./model_folder/results.csv` (where model_folder i
 
 Usage:
 
-`python anomaly_detection.py`
-
+```
+python anomaly_detection.py
+```
 
 ### Autoencoders Folder:
 
@@ -113,7 +120,6 @@ The scripts from the original artifact are modified to evalaute the generic conc
 
 execute the python notebook to reproduce results showed in Figure 5 and Table 7
 
-
 ### Countermeasure Folder:
 
 this folder contains the countermeasure presented in the appedix
@@ -123,5 +129,6 @@ this folder contains the countermeasure presented in the appedix
 Train and Test countermeasure on the original BATADAl data and on the generic concealment attacks (as in Appendix C, Table 10, Figures 8 and 9).
 
 Usage:
-
+```
 execute it in Matlab
+```
