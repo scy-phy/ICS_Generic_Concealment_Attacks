@@ -3,9 +3,20 @@ Assessing Model-free Anomaly Detection in Industrial Control Systems Against Gen
 
 ## In proceedings of the the Annual Computer Security Applications Conference 2022 (ACSAC'2022)
 
+### Artifact evalauted Reusable by the ACSAC artifact evaluation commitee.
+
 When using this code from this repository please cite our work as follows:
 ```
-BIBTEX entry to be added
+@InProceedings{erba22genericconcealment,
+  title      = {Assessing Model-free Anomaly Detection in Industrial Control Systems Against Generic Concealment Attacks},
+  author     = {Erba, Alessandro and Tippenhauer, Nils Ole},
+  booktitle  = {Proceedings of the Annual Computer Security Applications Conference (ACSAC)},
+  year       = {2022},
+  month      = DEC,
+  doi        = {10.1145/3564625.3564633},
+  publisher  = {ACM},
+  address={Austin, USA}
+}
 ``` 
  
 ## Implementation of spoofing framework, re-implementation of detection mechanisms from prior work and our defense
@@ -32,9 +43,6 @@ conda activate py38
 pip install -r requirements.txt
 sudo apt install default-jre
 ```
-
-### Virtual machine availability
-For the purposes of artifact evalaution a virtual machine is available for the reviewers. Please contact us via HotCRP comments to access the VM. 
 
 
 ### Spoofing Framework folder:
